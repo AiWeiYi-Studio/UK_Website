@@ -1,0 +1,229 @@
+body,ul,li,h2,h3,div{margin:0;padding:0;border:0;}
+body{font-size:12px; font-family:"Microsoft YaHei";}
+ul{list-style-type:none;}
+a{text-decoration:none;}
+
+::selection{color:#ffffff;background:#ff7f00;}
+
+a{color:#000;text-decoration:none;}
+a:hover{color:#ff7f00;text-decoration:none;}
+
+body{background:#eee url(../img/bg.png) left top repeat;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.list{
+	text-align: center;
+	width:100%;
+	height:auto;
+	margin-top:10px;
+}
+.list img{
+        width:250px;
+}
+.list li{
+        width:300px;
+	display:inline-block;
+	margin:5px;
+	height:100px;
+	background:#FFF;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.2);
+        border-radius:3px;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+	transition:0.3s all ease;
+	overflow:hidden;
+	position:relative;
+}
+.list li:hover{
+	background:#000;
+	box-shadow:2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.text h2,.text a{
+	font-family:"Microsoft YaHei";
+	color:#333;
+	text-shadow:1px 2px 4px #999;
+	font-size:30px;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.text h3{
+	font-family:Verdana;
+	font-size:15px;
+	color:#666;
+	font-weight:normal;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.list li:hover h2,.list li:hover a{
+	color:#fff;
+	font-size:25px;
+	text-shadow:1px 2px 4px #333;
+}
+.list li:hover .text h3{
+	color:#ff7f00;
+	font-size:16px;
+	margin-top:5px;
+}
+.list li .icon{
+	width:60px;
+	height:100px;
+  	line-height:100px;
+        margin:0px 20px;
+	float:left;
+	font-size:30px;
+	text-align:center;
+	-webkit-transition:0.3s all ease;
+	-moz-transition:0.3s all ease;
+	-ms-transition:0.3s all ease;
+	-o-transition:0.3s all ease;
+}
+.list li:hover .icon{
+	color:#fff;
+	font-size:40px;
+        margin:0px 20px;
+}
+.list li:hover .text{
+	-webkit-animation-name:shake;
+	-moz-animation-name:shake;
+}
+.text{
+	float:left;
+        text-align:center;
+	margin-top:20px;
+	height:70px;
+	-webkit-animation:.5s .2s ease both;
+        -moz-animation:1s .2s ease both;
+}
+#footer .copy{
+        font-size:13px;
+        text-align:center;
+        margin:10px 15px 10px;
+}
+@-webkit-keyframes shake{
+0%,100%{-webkit-transform:translateX(0);}
+20%,60%{-webkit-transform:translateX(-10px);}
+40%,80%{-webkit-transform:translateX(10px);}
+}
+@-moz-keyframes shake{
+0%,100%{-moz-transform:translateX(0);}
+20%,60%{-moz-transform:translateX(-10px);}
+40%,80%{-moz-transform:translateX(10px);}
+}
+
+.backtop:hover, .backtop:hover h6, .contact-qq:hover, .contact-qq:hover h6, .contact-wx:hover, .contact-wx:hover h6{
+	opacity: 1;
+	filter:alpha(opacity=1);
+}
+.backtop:hover h6, .contact-qq:hover h6, .contact-wx:hover h6{
+	right: 100%;
+}
+.backtop h6, .contact-qq h6, .contact-wx h6{
+	position: absolute;
+	z-index: 999;
+        margin: -35px 10px 0 0;
+	right: -180px;
+	line-height: 35px;
+	font-size: 16px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 2px;
+	text-align: center;
+	opacity: 0;
+        filter:alpha(opacity=0);
+}
+.backtop h6{
+       width:83px;
+}
+.contact-qq h6{
+       width:130px;       
+}
+.contact-wx h6{
+       width:130px;
+       height:130px;
+       margin: -125px 10px 0 0;
+}
+.contact-wx img{
+       width:120px;
+       height:120px;
+       margin-top:5px;
+}
+.backtop h6 i, .contact-qq h6 i, .contact-wx h6 i{
+	position: absolute;
+	right: -4px;
+	top: 50%;
+	margin-top: -5px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	border-left: 4px solid #000;
+	border-top: 4px solid rgba(0, 0, 0, 0);
+	border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+.contact-wx h6 i{
+        margin-top: 37px;
+}
+.backtop, .backtop h6, .contact-qq, .contact-qq h6, .contact-wx, .contact-wx h6{
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	transition:all 0.25s;
+}
+.backtop,.contact-qq,.contact-wx{z-index:99999;background:#555;color:#ddd;display:inline-block;border-radius:2px;width:40px;height:40px;font-size:18px;text-align:center;line-height:38px;position:fixed;right:20px;box-shadow:0 0 0 1px rgba(0,0,0,.02),0 4px 10px rgba(0,0,0,.06)}
+.backtop:hover,.contact-qq:hover,.contact-wx:hover{background:#000;color:#fff}
+.backtop{bottom:184px;}
+.contact-qq{bottom:142px;}
+.contact-wx{bottom:100px;}
+
+@media (max-width: 767px) {
+  .backtop,.contact-qq,.contact-wx{display:inline-block;width:30px;height:30px;right:10px;font-size:15px;line-height:28px;}
+  .backtop{bottom:124px;}
+  .contact-qq{bottom:92px;}
+  .contact-wx{bottom:60px;}
+
+  .backtop h6, .contact-qq h6, .contact-wx h6{
+	position: absolute;
+	z-index: 999;
+	top:50%;
+	margin: -13px 5px 0 0;
+	right: -150px;
+	line-height: 26px;
+	font-size: 12px;
+	background-color: #000;
+	color: #fff;
+	border-radius: 2px;
+	text-align: center;
+	opacity: 0;
+        filter:alpha(opacity=0);
+  }
+  .backtop h6{
+        width:53px;
+  }
+  .contact-qq h6{
+        width:100px;
+  }
+  .contact-wx h6{
+        width:110px;
+        height:110px;
+        margin: -88px 5px 0 0;
+  }
+  .contact-wx img{
+        width:100px;
+        height:100px;
+        margin-top:5px;
+  }
+  .contact-wx h6 i{
+        margin-top: 28px;
+  }
+}
