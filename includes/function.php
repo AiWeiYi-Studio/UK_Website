@@ -190,7 +190,7 @@ function get_ip_city3($ip)
 }
 function update_version()
 {
-	$query = curl_get("http://ob.ukyun.cn/api/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode."&ver=".VERSION);
+	$query = curl_get("http://授权站域名/api/check.php?url=".$_SERVER["HTTP_HOST"]."&authcode=".authcode."&ver=".VERSION);
 	if ($query = json_decode($query,true)) {
 		return $query;
 	}
